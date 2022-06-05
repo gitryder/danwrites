@@ -5,9 +5,7 @@ layout: default
 <div class="m-6">
   {% remoteImage title, cover, "Blog post cover" %}
 
-  <p class="font-bold text-base leading-4 tracking-[.2em] my-3 mt-8 text-black">
-    {{ category | upper }}
-  </p>
+  <p class="caption">{{ category | upper }}</p>
   <h1 class="font-bold text-4xl">{{ title }}</h1>
   <hr class="my-5 bg-black" />
   <h2 class="font-semibold text-2xl">{{ description }}</h2>
