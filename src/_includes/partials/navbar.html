@@ -1,7 +1,9 @@
 <nav class="w-full flex p-5 shadow-[0px_1px_4px_rgba(220,22,22,0.25)]">
-  <h1 class="font-mono font-bold text-3xl text-accent-red">
-    {{ settings.nav.title | lower }}
-  </h1>
+  <a href="{{ environment.baseUrl }}/blog">
+    <h1 class="font-mono font-bold text-3xl text-accent-red">
+      {{ settings.nav.title | lower }}
+    </h1>
+  </a>
   <span class="font-mono font-bold text-xs text-[#C4C4C4]">
     {{ settings.nav.status }}
   </span>
