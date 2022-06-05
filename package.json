@@ -1,0 +1,32 @@
+{
+  "author": "Danyl Fernandes <realllydan@gmail.com>",
+  "description": "Dan's personal writing space.",
+  "scripts": {
+    "serve": "eleventy --serve",
+    "css": "postcss src/css/tailwind.css -o _site/css/style.css",
+    "build": "eleventy && yarn css"
+  },
+  "keywords": [
+    "tech",
+    "blog",
+    "finances"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gitryder/danwrites.git",
+    "https": "https://github.com/gitryder/danwrites.git",
+    "editUrl": "https://github.com/gitryder/danwrites/edit/master"
+  },
+  "bugs": {
+    "url": "https://github.com/gitryder/danwrites/issues"
+  },
+  "dependencies": {
+    "autoprefixer": "10.4.7",
+    "postcss": "8.4.14",
+    "tailwindcss": "3.0.24"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "1.0.1",
+    "postcss-cli": "^9.1.0"
+  }
+}
