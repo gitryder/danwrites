@@ -2,8 +2,9 @@
   "author": "Danyl Fernandes <realllydan@gmail.com>",
   "description": "Dan's personal writing space.",
   "scripts": {
+    "dev": "cross-env BASE_URL=http://localhost:8080 NODE_ENV=development npm-run-all --parallel css serve",
     "serve": "eleventy --serve",
-    "css": "postcss src/css/tailwind.css -o _site/css/style.css",
+    "css": "postcss src/css/tailwind.css -o _site/css/style.css --watch",
     "build": "eleventy && yarn css"
   },
   "keywords": [
@@ -27,6 +28,8 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "1.0.1",
+    "cross-env": "^7.0.3",
+    "npm-run-all": "^4.1.5",
     "postcss-cli": "^9.1.0"
   }
 }
