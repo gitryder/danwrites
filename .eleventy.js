@@ -16,9 +16,6 @@ const asyncImageShortcode = async (postSlug, url, alt) => {
     widths: [480, 768, 1200],
     formats: ['webp', 'jpeg'],
     outputDir: `./_site/img/`,
-    filenameFormat: (id, src, width, format) => {
-      return `${postSlug}--${width}.${format}`;
-    },
   });
 
   const imageAttributes = {
