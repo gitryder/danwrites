@@ -7,7 +7,7 @@ layout: default
 >
   {% for post in collections.post | reverse %}
   <article
-    class="rounded-lg shadow shadow-amber-500 md:shadow-none hover:shadow-xl hover:scale-102 p-6 mx-3 my-4"
+    class="rounded-lg shadow shadow-amber-500 md:shadow-none hover:shadow-md hover:shadow-accent-red hover:scale-102 p-6 mx-3 my-4"
   >
     <p class="caption text-accent-red">{{ post.data.category | upper }}</p>
     <a href="{{ post.url }}">
