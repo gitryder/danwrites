@@ -5,5 +5,6 @@ module.exports = function (eleventyConfig) {
     dir: {
       input: 'src',
     },
+    htmlTemplateEngine: 'njk',
   };
 };
