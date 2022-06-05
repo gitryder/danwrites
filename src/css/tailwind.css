@@ -5,3 +5,7 @@
 img {
   @apply rounded-lg;
 }
+
+.caption {
+  @apply font-bold text-base leading-4 tracking-[.2em] my-3 mt-8;
+}
