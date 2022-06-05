@@ -6,6 +6,7 @@ module.exports = {
   theme: {
     colors: {
       'accent-red': '#DC1616',
+      black: '#2A2A2A',
       ...colors,
     },
     extend: {
@@ -15,5 +16,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 };
