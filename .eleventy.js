@@ -1,5 +1,6 @@
 const Image = require('@11ty/eleventy-img');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
+const { DateTime } = require('luxon');
 
 /**
  * Uses Eleventy's Image utility to get image from Unsplash,
@@ -28,10 +29,18 @@ const asyncImageShortcode = async (postSlug, url, alt) => {
   return Image.generateHTML(metadata, imageAttributes);
 };
 
+/** Uses luxon's DateTime to return a readable date format */
+const getReadableDate = dateObj => {
+  return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toLocaleString(
+    DateTime.DATE_MED,
+  );
+};
+
 module.exports = function (eleventyConfig) {
   eleventyConfig.setTemplateFormats(['html', 'njk', 'jpg', 'md']);
   eleventyConfig.addNunjucksAsyncShortcode('remoteImage', asyncImageShortcode);
   eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addFilter('readableDate', getReadableDate);
 
   return {
     dir: {
