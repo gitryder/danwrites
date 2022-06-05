@@ -1,4 +1,5 @@
 const Image = require('@11ty/eleventy-img');
+const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 
 /**
  * Uses Eleventy's Image utility to get image from Unsplash,
@@ -33,6 +34,7 @@ const asyncImageShortcode = async (postSlug, url, alt) => {
 module.exports = function (eleventyConfig) {
   eleventyConfig.setTemplateFormats(['html', 'njk', 'jpg', 'md']);
   eleventyConfig.addNunjucksAsyncShortcode('remoteImage', asyncImageShortcode);
+  eleventyConfig.addPlugin(syntaxHighlight);
 
   return {
     dir: {
