@@ -32,10 +32,7 @@ const asyncImageShortcode = async (postSlug, url, alt) => {
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.setTemplateFormats(['html', 'njk', 'jpg', 'md']);
-  eleventyConfig.addNunjucksAsyncShortcode(
-    'unsplashImage',
-    asyncImageShortcode,
-  );
+  eleventyConfig.addNunjucksAsyncShortcode('remoteImage', asyncImageShortcode);
 
   return {
     dir: {
