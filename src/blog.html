@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<section>
+  {% for post in collections.post | reverse %}
+  <article
+    class="rounded-lg shadow shadow-amber-500 hover:shadow-xl hover:scale-102 p-6 mx-3 my-4"
+  >
+    <p class="caption text-accent-red">{{ post.data.category | upper }}</p>
+    <a href="{{ post.url }}">
+      <h1 class="font-bold text-3xl mt-2">{{ post.data.title }}</h1>
+    </a>
+    <p class="text-xl mt-3">{{ post.data.description }}</p>
+    <p class="font-semibold text-sm tracking-widest mt-3">
+      {{ post.date | readableDate | upper }}
+    </p>
+  </article>
+  {% endfor %}
+</section>
