@@ -2,19 +2,22 @@
 layout: default
 ---
 
-<section>
+<section
+  class="md:flex md:flex-col md:justify-center md:m-auto md:mt-4 md:max-w-lg"
+>
   {% for post in collections.post | reverse %}
   <article
-    class="rounded-lg shadow shadow-amber-500 hover:shadow-xl hover:scale-102 p-6 mx-3 my-4"
+    class="rounded-lg shadow shadow-amber-500 md:shadow-none hover:shadow-xl hover:scale-102 p-6 mx-3 my-4"
   >
     <p class="caption text-accent-red">{{ post.data.category | upper }}</p>
     <a href="{{ post.url }}">
-      <h1 class="font-bold text-3xl mt-3">{{ post.data.title }}</h1>
+      <h1 class="font-bold text-3xl mt-3 md:text-4xl">{{ post.data.title }}</h1>
     </a>
     <p class="text-xl mt-3">{{ post.data.description }}</p>
     <p class="font-semibold text-sm tracking-widest mt-3">
       {{ post.date | readableDate | upper }}
     </p>
   </article>
+  <hr class="hidden md:block mx-5" />
   {% endfor %}
 </section>
