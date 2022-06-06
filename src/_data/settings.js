@@ -2,7 +2,7 @@ module.exports = {
   author: 'Danyl Fernandes',
   nav: {
     title: 'dan',
-    status: 'is building 🛠️',
+    status: 'new blog, yay 🥳',
   },
   social: {
     twitter: 'https://twitter.com/androidanyl',
