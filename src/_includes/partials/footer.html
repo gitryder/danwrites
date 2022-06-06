@@ -1,0 +1,27 @@
+<footer
+  class="bottom-0 bg-slate-50 flex justify-center text-center leading-tight w-full py-6 px-6 mt-6"
+>
+  <div class="w-44 md:w-full">
+    <small class="text-xs text-gray-400"
+      >Copyright © {{settings.name}}
+      <span id="copyright">
+        <script>
+          document
+            .getElementById('copyright')
+            .appendChild(
+              document.createTextNode(`${new Date().getFullYear()}.`),
+            );
+        </script>
+      </span>
+      Made with ❤ by
+      <a
+        href="{{ settings.social.twitter }}"
+        target="_blank"
+        rel="noreferrer noopener"
+        class="underline"
+      >
+        {{ settings.author }}
+      </a>
+    </small>
+  </div>
+</footer>
