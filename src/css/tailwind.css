@@ -7,5 +7,5 @@ img {
 }
 
 .caption {
-  @apply font-bold text-base leading-4 tracking-[.2em];
+  @apply font-bold text-sm md:text-lg leading-4 tracking-[.2em];
 }
