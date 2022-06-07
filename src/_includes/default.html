@@ -9,6 +9,33 @@
     <title>{{ title }}</title>
     <meta name="description" content="{{ description }}" />
 
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="{{environment.baseURL}}/assets/favicons/apple-icon-152x152.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="{{environment.baseURL}}/assets/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="{{environment.baseURL}}/assets/favicons/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="{{environment.baseURL}}/assets/favicons/favicon-96x96.png"
+    />
+    <meta name="msapplication-TileColor" content="#DC1616" />
+    <meta name="theme-color" content="#DC1616" />
+
     <!-- Twitter -->
     <meta name="twitter:title" content="{{ title }}" />
     <meta property="twitter:description" content="{{ description }}" />
@@ -43,10 +70,7 @@
     />
   </head>
   <body>
-    {% include './partials/navbar.html' %} 
-
-    {{ content | safe }}
-
-    {%include './partials/footer.html' %}
+    {% include './partials/navbar.html' %} {{ content | safe }} {%include
+    './partials/footer.html' %}
   </body>
 </html>
