@@ -1,0 +1,3 @@
+# Redirect index page to blog
+/ /blog
+
