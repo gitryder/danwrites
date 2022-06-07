@@ -85,6 +85,22 @@
       rel="stylesheet"
     />
     {% endif %}
+
+    <!-- Google Analytics -->
+    {% if environment.nodeEnv == "production" %}
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-3RMRSF5KQV"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-3RMRSF5KQV');
+    </script>
+    {% endif %}
   </head>
   <body>
     {% include './partials/navbar.html' %} {{ content | safe }} {%include
