@@ -21,7 +21,7 @@ coincidence, the name of my (currently unregistered) company - Chadash Labs.
 I love learning new things, building new things, and teaching the things I've
 learned along the way.
 
-My philosophy on life is simple - Skill puts you in the presence of kings; be
+My take on life is simple - skill puts you in the presence of kings; be
 extraordinarily skilled and ~~if possible~~, help others along the way. And
 being skilled requires one to be at the edge of one's craft.
 
@@ -31,14 +31,21 @@ new things every day and figure out how to use those things to improve my life
 and systems.
 
 And even though the things I learn might be subjective, I'm sure there's
-something everyone can learn from each other. Besides,
-[this](https://dkb.io/post/write-it-anyway) blog post motivated me more than
+something everyone can learn from each other (if these things are
+well-documented).
+
+Besides, [this](https://dkb.io/post/write-it-anyway) blog post motivated me
 enough to start writing & put my thoughts out there.
 
-So I spun this blog up over the weekend with the intent of posting about all the
-things I love talking about - Tech., Investing, English Vocabulary & more.
+And what better way than a blog can there be to post about all the things I love
+talking about - Tech., Investing, English Vocabulary & General thoughts and
+Observations.
 
-I plan to pilot this train, and if you think what I write about interests you,
-why not join the bandwagon and learn and grow together.
+So, 2 days and ~83 git commits later 👨‍💻, this shiny blog site is good to go!
 
-Wear your favorite shoes, hop on and let's get this started.
+I plan to pilot this train of knowledge-sharing 🚂, and if you think what I
+write about interests you, why not join the bandwagon and learn and grow
+together.
+
+This is a Chadash journey. Wear your favorite shoes, hop on and let's get this
+started 🙏.
