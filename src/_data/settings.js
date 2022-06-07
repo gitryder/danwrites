@@ -4,6 +4,9 @@ module.exports = {
     title: 'dan',
     status: 'new blog, yay 🥳',
   },
+  style: {
+    codeTheme: 'default',
+  },
   social: {
     twitter: 'https://twitter.com/androidanyl',
     github: 'https://github.com/gitryder',
