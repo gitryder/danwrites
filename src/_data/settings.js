@@ -9,7 +9,7 @@ module.exports = {
   },
   comments: {
     enabled: true,
-    theme: 'github-dark-orange',
+    theme: 'boxy-light',
   },
   social: {
     twitter: 'https://twitter.com/androidanyl',
