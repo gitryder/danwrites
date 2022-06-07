@@ -7,7 +7,11 @@ layout: default
 >
   <div>
     {% remoteImage title, cover, "Blog post cover" %}
-    <p class="font-medium text-[10px] sm:text-xs text-center mt-2 text-gray-300">{{ coverCredit | safe }}</p>
+    <p
+      class="font-medium text-[10px] sm:text-xs text-center mt-2 text-gray-300"
+    >
+      {{ coverCredit | safe }}
+    </p>
   </div>
   <p class="caption my-3 mt-8 text-accent-red">{{ category | upper }}</p>
   <h1
@@ -47,4 +51,17 @@ layout: default
       </p>
     </div>
   </div>
+  {% if environment.nodeEnv == "production" and settings.comments.enabled %}
+  <div class="container mt-8">
+    <script
+      src="https://utteranc.es/client.js"
+      repo="gitryder/danwrites"
+      issue-term="title"
+      label="blog-comments"
+      theme="{{ settings.comments.theme }}"
+      crossorigin="anonymous"
+      async
+    ></script>
+  </div>
+  {% endif %}
 </div>
