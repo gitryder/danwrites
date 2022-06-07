@@ -8,7 +8,7 @@
     <!-- Title and Description -->
     <title>{{ title }}</title>
     <meta name="description" content="{{ description }}" />
-    <meta name="keywords" content="{{ tags }}" />
+    <meta name="keywords" content="{{ tags.join(', ') }}" />
 
     <!-- Favicons -->
     <link
@@ -43,10 +43,10 @@
     <meta name="twitter:title" content="{{ title }}" />
     <meta name="twitter:alt" content="{{ settings.author }}" />
     <meta property="twitter:description" content="{{ description }}" />
-    <!-- <meta
+    <meta
       name="twitter:image"
-      content="{{ environment.baseUrl }}img/{{ thumbnail }}"
-    /> -->
+      content="{{ environment.baseUrl }}/assets/{{ thumbnail }}.png"
+    />
     <meta name="twitter:card" content="summary_large_image" />
 
     <!-- Canonical -->
@@ -55,10 +55,10 @@
     <!-- Open Graph -->
     <meta property="og:title" content="{{ title }}" />
     <meta property="og:description" content="{{ description  }}" />
-    <!-- <meta
+    <meta
       property="og:image"
-      content="{{ environment.baseUrl }}img/{{ thumbnail }}"
-    /> -->
+      content="{{ environment.baseUrl }}/assets/{{ thumbnail }}.png"
+    />
     <meta property="og:url" content="{{ environment.baseUrl }}" />
     <meta property="og:type" content="article" />
 
