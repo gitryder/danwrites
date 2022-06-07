@@ -72,6 +72,19 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Roboto+Mono&family=Space+Grotesk:wght@700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Prism.js stylesheet -->
+    {% if settings.style.codeTheme == 'synth' %}
+    <link
+      href="{{ environment.baseUrl }}/css/prism-synthwave-theme.css"
+      rel="stylesheet"
+    />
+    {% else %}
+    <link
+      href="{{ environment.baseUrl }}/css/prism-theme.css"
+      rel="stylesheet"
+    />
+    {% endif %}
   </head>
   <body>
     {% include './partials/navbar.html' %} {{ content | safe }} {%include
