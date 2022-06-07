@@ -31,9 +31,9 @@ new things every day and figure out how to use those things to improve my life
 and systems.
 
 And even though the things I learn might be subjective, I'm sure there's
-something everyone can learn from each other. Besides, this
-[blog](https://dkb.io/post/write-it-anyway) post motivated me more than enough
-to start writing & put my thoughts out there.
+something everyone can learn from each other. Besides,
+[this](https://dkb.io/post/write-it-anyway) blog post motivated me more than
+enough to start writing & put my thoughts out there.
 
 So I spun this blog up over the weekend with the intent of posting about all the
 things I love talking about - Tech., Investing, English Vocabulary & more.
