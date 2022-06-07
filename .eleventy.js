@@ -41,6 +41,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addNunjucksAsyncShortcode('remoteImage', asyncImageShortcode);
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addFilter('readableDate', getReadableDate);
+  eleventyConfig.addPassthroughCopy('src/_redirects');
 
   return {
     dir: {
