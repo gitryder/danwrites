@@ -5,7 +5,10 @@ layout: default
 <div
   class="md:m-auto md:mt-6 max-w-3xl md:flex md:flex-col md:justify-center md:items-center m-6"
 >
-  {% remoteImage title, cover, "Blog post cover" %}
+  <div>
+    {% remoteImage title, cover, "Blog post cover" %}
+    <p class="font-medium text-[10px] sm:text-xs text-center mt-2 text-gray-300">{{ coverCredit | safe }}</p>
+  </div>
   <p class="caption my-3 mt-8 text-accent-red">{{ category | upper }}</p>
   <h1
     class="font-bold text-4xl md:text-center md:text-5xl md:leading-[1.15] md:max-w-2xl lg:text-6xl lg:leading-[1.15]"
@@ -22,7 +25,6 @@ layout: default
   >
     {{ content | safe }}
   </article>
-
   <hr class="mb-8 bg-black md:w-full" />
   <div class="relative">
     <div
@@ -37,7 +39,7 @@ layout: default
         alt="Danyl Fernandes"
       />
       <p
-        class="text-base sm:text-lg sm:ml-7 text-slate-300  mt-4 sm:mt-0 text-center sm:text-left"
+        class="text-base sm:text-lg sm:ml-7 text-slate-300 mt-4 sm:mt-0 text-center sm:text-left"
       >
         Hi, I'm Danyl 👋, a software engineer. I love linux, open-source
         software and all things tech. Among other things, I love Marvel movies
