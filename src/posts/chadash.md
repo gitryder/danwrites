@@ -6,6 +6,7 @@ description:
 date: 2022-06-08
 permalink: '/blog/chadash/'
 cover: https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5
+coverCredit: Photo by Tom Winckels on Unsplash
 thumbnail: chadash
 category: notes
 tags:
