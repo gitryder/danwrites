@@ -7,6 +7,10 @@ module.exports = {
   style: {
     codeTheme: 'default',
   },
+  comments: {
+    enabled: true,
+    theme: 'github-dark-orange',
+  },
   social: {
     twitter: 'https://twitter.com/androidanyl',
     github: 'https://github.com/gitryder',
