@@ -8,6 +8,7 @@
     <!-- Title and Description -->
     <title>{{ title }}</title>
     <meta name="description" content="{{ description }}" />
+    <meta name="keywords" content="{{ tags }}" />
 
     <!-- Favicons -->
     <link
@@ -37,13 +38,19 @@
     <meta name="theme-color" content="#DC1616" />
 
     <!-- Twitter -->
+    <meta name="twitter:creator" content="@androidanyl" />
+    <meta name="twitter:site" content="@androidanyl" />
     <meta name="twitter:title" content="{{ title }}" />
+    <meta name="twitter:alt" content="{{ settings.author }}" />
     <meta property="twitter:description" content="{{ description }}" />
     <!-- <meta
       name="twitter:image"
       content="{{ environment.baseUrl }}img/{{ thumbnail }}"
     /> -->
     <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="{{ environment.baseUrl }}" />
 
     <!-- Open Graph -->
     <meta property="og:title" content="{{ title }}" />
@@ -52,10 +59,7 @@
       property="og:image"
       content="{{ environment.baseUrl }}img/{{ thumbnail }}"
     /> -->
-    <meta
-      property="og:url"
-      content="{{ environment.baseUrl }}"
-    />
+    <meta property="og:url" content="{{ environment.baseUrl }}" />
     <meta property="og:type" content="article" />
 
     <!-- Main CSS -->
