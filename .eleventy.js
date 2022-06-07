@@ -39,6 +39,7 @@ const getReadableDate = dateObj => {
 module.exports = function (eleventyConfig) {
   eleventyConfig.setTemplateFormats([
     'html',
+    'css',
     'njk',
     'jpg',
     'png',
