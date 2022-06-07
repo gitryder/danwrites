@@ -37,7 +37,14 @@ const getReadableDate = dateObj => {
 };
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.setTemplateFormats(['html', 'njk', 'jpg', 'md', 'jpeg']);
+  eleventyConfig.setTemplateFormats([
+    'html',
+    'njk',
+    'jpg',
+    'png',
+    'jpeg',
+    'md',
+  ]);
   eleventyConfig.addNunjucksAsyncShortcode('remoteImage', asyncImageShortcode);
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addFilter('readableDate', getReadableDate);
