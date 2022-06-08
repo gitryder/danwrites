@@ -18,3 +18,15 @@ pre[class*='language-'] {
 .caption {
   @apply font-bold text-sm md:text-lg leading-4 tracking-[.2em];
 }
+
+blockquote {
+  @apply border-l-8 border-gray-300 !important;
+}
+
+blockquote p {
+  @apply font-extralight text-gray-500;
+}
+
+.prose > blockquote p::before {
+  content: none;
+}
