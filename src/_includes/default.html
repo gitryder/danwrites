@@ -102,8 +102,8 @@
     </script>
     {% endif %}
   </head>
-  <body>
-    {% include './partials/navbar.html' %} {{ content | safe }} {%include
-    './partials/footer.html' %}
+  <body class="h-screen flex flex-col justify-between">
+    <div>{% include './partials/navbar.html' %} {{ content | safe }}</div>
+    {%include './partials/footer.html' %}
   </body>
 </html>
