@@ -15,6 +15,8 @@ tags:
 templateEngineOverride: njk,md
 ---
 
+{% callout "🙏", "Before we proceed I just want to say that I'm not a psychologist. What I've shared is only my personal experience. Thanks, let's go." %}
+
 Did you know that there is a disease, perhaps, even deadlier than the
 Coronavirus? It's called 'Unreasonable Comparison'. This disease causes you to
 compare yourself to others baselessly and conjecture that you are good for
