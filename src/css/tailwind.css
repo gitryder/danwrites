@@ -30,3 +30,23 @@ blockquote p {
 .prose > blockquote p::before {
   content: none;
 }
+
+.callout-base {
+  @apply bg-gray-100 text-gray-800 text-xs rounded-lg p-6 font-medium;
+}
+
+.callout--emoji {
+  @apply m-0 pr-4 text-3xl !important;
+}
+
+.callout--text {
+  @apply m-0 !important;
+}
+
+.callout-info {
+  @apply bg-amber-200 text-amber-900;
+}
+
+.callout-warning {
+  @apply bg-red-400 text-red-900;
+}
