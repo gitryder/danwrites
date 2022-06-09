@@ -29,6 +29,13 @@ const asyncImageShortcode = async (postSlug, url, alt) => {
   return Image.generateHTML(metadata, imageAttributes);
 };
 
+const calloutShortcode = (emoji, content, type) => {
+  return `<div class="callout-base callout-${type} flex items-center">
+  <p class="callout--emoji">${emoji}</p>
+  <p class="callout--text">${content}</p>
+  </div>`;
+};
+
 /** Uses luxon's DateTime to return a readable date format */
 const getReadableDate = dateObj => {
   return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toLocaleString(
@@ -47,6 +54,7 @@ module.exports = function (eleventyConfig) {
     'md',
   ]);
   eleventyConfig.addNunjucksAsyncShortcode('remoteImage', asyncImageShortcode);
+  eleventyConfig.addNunjucksShortcode('callout', calloutShortcode);
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addFilter('readableDate', getReadableDate);
   eleventyConfig.addPassthroughCopy('src/_redirects');
