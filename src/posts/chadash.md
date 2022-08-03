@@ -15,8 +15,7 @@ tags:
 templateEngineOverride: njk,md
 ---
 
-Chadash is a Hebrew word that means to renew or to repair. It is also, by no
-coincidence, the name of my (currently unregistered) company - Chadash Labs.
+Chadash is a Hebrew word that means to renew or to repair.
 
 I love learning new things, building new things, and teaching the things I've
 learned along the way.
